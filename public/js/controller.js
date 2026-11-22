@@ -6,7 +6,7 @@ import { RACERS, RACER_IDS, BODIES, WHEELS, BODY_IDS, WHEEL_IDS, KPAINTS, saniti
 const $ = (id) => document.getElementById(id);
 const SLOT_PAINTS = ['#ff2d95', '#00b8ff', '#ffcc00', '#7dff2b'];
 const ITEM_ICONS = { rocket: '🚀', star: '⭐', magnet: '🧲', banana: '🍌', orb: '🟢', homing: '🔴', boost: '⚡', coins: '🪙', horn: '📯',
-  green: '🟢', red: '🔴', mushroom: '🍄', bullet: '🚀', coin: '🪙' };   // second row: Sunny Kart items
+  green: '🟢', red: '🔴', mushroom: '🍄', bullet: '🚀', coin: '🪙' };   // second row: Smarty Kart items
 const ITEM_NAMES = { rocket: 'ROCKET!', star: 'STAR POWER!', magnet: 'COIN MAGNET!', banana: 'BANANA!', orb: 'BOUNCY ORB!', homing: 'HOMING ORB!', boost: 'BOOST!', coins: '+3 COINS!', horn: 'HORN BLAST!',
   green: 'GREEN SHELL!', red: 'RED SHELL!', mushroom: 'MUSHROOM!', bullet: 'BULLET!', coin: '+2 COINS!' };
 const TIER_NAMES = ['', 'MINI-TURBO', 'SUPER TURBO', 'ULTRA TURBO'], TIER_COLORS = ['', '#4a8cff', '#ff8a1a', '#d24dff'];
@@ -22,13 +22,13 @@ try { savedCfg = JSON.parse(localStorage.getItem('nr_cfg') || 'null'); } catch {
 let cfg = sanitizeCfg(savedCfg || DEFAULT_CFG);
 // which game the TV is running ('neon' | 'sunny' | 'menu'); the TV says so in every state message
 let game = 'neon';
-// Sunny Kart kart: racer + body + wheels + colour (racer null until chosen or given by the TV)
+// Smarty Kart kart: racer + body + wheels + colour (racer null until chosen or given by the TV)
 let kart = (() => { try { return JSON.parse(localStorage.getItem('nr_kart') || 'null'); } catch { return null; } })();
 kart = kart ? sanitizeKart(kart) : null;
 if (!kart && RACERS[localStorage.getItem('nr_racer')]) kart = sanitizeKart({ racer: localStorage.getItem('nr_racer') });
 let stab = 'racer', kpreview = null;
 const saveKart = () => localStorage.setItem('nr_kart', JSON.stringify(kart));
-let others = [];   // racers other players have (Sunny Kart lobby)
+let others = [];   // racers other players have (Smarty Kart lobby)
 
 const input = { s: 0, g: 0, b: 0, n: 0, i: 0 };
 const held = { left: new Set(), right: new Set(), gas: new Set(), brake: new Set(), nitro: new Set(), item: new Set() };
@@ -278,7 +278,7 @@ function onHud(m) {
   $('hCoins').textContent = `🪙 ${m.coins}`;
   $('nfill').style.height = Math.round(m.nitro * 100) + '%';
   $('hItem').textContent = m.item === 'roll' ? '🎲' : (m.item ? ITEM_ICONS[m.item] + (m.n > 1 ? '×' + m.n : '') : '');
-  if (game !== 'sunny') {   // Sunny Kart has its own ITEM and DRIFT buttons
+  if (game !== 'sunny') {   // Smarty Kart has its own ITEM and DRIFT buttons
     // items fire by themselves ~0.8 s after they arrive (one at a time for ×3 items)
     if (m.item && m.item !== 'roll' && !m.fin && !autoItemT) autoItemT = setTimeout(() => { autoItemT = 0; autoPress('item', 0); }, 800);
     // boost fires by itself when the bar is full, and runs until it's empty
@@ -309,7 +309,7 @@ function saveCfg(send = true) {
   renderGarage();
   if (send) sendGarage();
 }
-// one garage message for both games: Neon Racer reads its car fields, Sunny Kart reads racer/body/wheels/kpaint
+// one garage message for both games: Neon Racer reads its car fields, Smarty Kart reads racer/body/wheels/kpaint
 function sendGarage() { sendRaw({ t: 'garage', cfg: { ...cfg, ...(kart || {}) } }); }
 function setKart(change) {
   kart = sanitizeKart({ ...(kart || { racer: 'ruby' }), ...change });
@@ -336,7 +336,7 @@ function setGame(g) {
   game = g;
   document.body.classList.toggle('sunny', g === 'sunny');
   document.body.classList.toggle('menu', g === 'menu');
-  document.title = g === 'sunny' ? 'Sunny Kart – Controller' : 'Neon Racer – Controller';
+  document.title = g === 'sunny' ? 'Smarty Kart – Controller' : 'Neon Racer – Controller';
   setItem(null); setThemeColor();
   if ($('garage').classList.contains('on')) showGarage(true);
 }

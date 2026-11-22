@@ -1,4 +1,4 @@
-// Sunny Kart kart look (version 2), shared by the TV game, the phone preview and the kart lab page.
+// Smarty Kart kart look (version 2), shared by the TV game, the phone preview and the kart lab page.
 // Each kart is: body (Paint / Trim / Chrome sharing one baked texture), driver (baked texture), a steering wheel that turns,
 // two front wheels that steer and spin, and a rear wheel pair that spins. Materials are matcaps drawn in code (no lights;
 // cheap on the TV's Mali-450): glossy 'candy' paint with a bright rim, satin trim, sky-reflecting chrome, soft driver and

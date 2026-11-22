@@ -1722,7 +1722,7 @@ function selfCheck() {
     dbgLog('error', 'load: ' + (e && e.stack ? e.stack : e));
     return;
   }
-  // after-race quiz (shared with Sunny Kart): the next race unlocks once every player has answered all five
+  // after-race quiz (shared with Smarty Kart): the next race unlocks once every player has answered all five
   quiz = new Quiz({
     THREE, scene, camera, track, theme: 'neon', s0: 30,
     players: () => [...players.values()].filter((p) => p.car && p.connected).map((p) => ({ id: p.id, name: p.name, color: p.cfg.paint, car: p.car })),

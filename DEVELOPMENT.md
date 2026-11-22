@@ -87,13 +87,13 @@ Debugging the TV, which has no DevTools:
 - `http://localhost:8080/?emulate=tv&debug=1` on the Mac turns off the WebGL features the TV lacks (WebGL 2, instancing, uint32 indices, float textures, fragment highp). Use it to catch problems before trying the TV.
 - Other URL options: `?res=720` to try a different render height, and `?laps=N`.
 
-## Sunny Kart (second game, Mario Kart style)
+## Smarty Kart (second game, Mario Kart style)
 
 `http://<mac-ip>:8080` now opens a **Choose a game** start screen (`public/menu.html`): ◀ ▶ and OK on the remote, or tap a game on a
 connected phone. Direct links: `/neon` (Neon Racer, unchanged apart from Back → start screen) and `/sunny`. Same server, phones and QR code;
 phones stay connected when the game changes, and the TV's `state` message tells the controller which layout to show (`game: 'menu' | 'sunny'`).
 
-Phone in Sunny Kart: racer picker (Ruby / Lime / Sunny / Plum, no two players on the same racer), 🎮 Games button back to the start screen,
+Phone in Smarty Kart: racer picker (Ruby / Lime / Sunny / Plum, no two players on the same racer), 🎮 Games button back to the start screen,
 and race controls: stick | ITEM (tap) · REVERSE / HOP-DRIFT (hold) · GO. Holding HOP/DRIFT also accelerates.
 
 - Track: Mario Kart 3.js's "SNES Mario Circuit 3" model (a fan rip of Nintendo's track; private family use only, don't share it).
@@ -153,7 +153,7 @@ After every finished race, each player answers **5 general-knowledge questions**
 - **Protocol:** one new pad→TV message, `{t:'answer', k:0-3}`. During the quiz the state message carries `phase:'quiz'` with `qstate: intro|ask|locked|reveal|done`.
 
 
-## Sunny Kart karts, version 2 (baked look)
+## Smarty Kart karts, version 2 (baked look)
 
 `blender -b --factory-startup -P blender/sunny/build_karts_v2.py -- --out public/sunny/assets/v2` (≈30 s) builds every part into `public/sunny/assets/v2/`. Add `--only classic,ruby,standard` to build a few parts for a quick look, but **finish with a full run**: a partial run writes a `kart_parts.json` that lists only those parts.
 
@@ -175,11 +175,11 @@ After every finished race, each player answers **5 general-knowledge questions**
 - **Remembering it:** the TV stores the level in `localStorage` `kr_level`.
 - **TV remote:** Left/Right now change the level in the lobby. Up/Down add the remote player.
 - **What a level changes:**
-  - **Computer racers:** speed multipliers by distance to the leading kid, drift chance (Sunny Kart), and how eagerly they use items. On Easy they never get red shells or homing orbs.
-  - **Help for the kid:** steering help strength, wall speed loss (no stun on Easy), sand slowdown (Sunny Kart), and better item odds on Easy.
+  - **Computer racers:** speed multipliers by distance to the leading kid, drift chance (Smarty Kart), and how eagerly they use items. On Easy they never get red shells or homing orbs.
+  - **Help for the kid:** steering help strength, wall speed loss (no stun on Easy), sand slowdown (Smarty Kart), and better item odds on Easy.
   - **The kid's own kart handles the same on every level.**
 - **Protocol:** pad→TV `{t:'level', v}`; the TV's `state` message carries `level`.
-- **Measured** (Sunny Kart, Mac emulation): the same scripted driver for 30 s left the computer racers 32–99 m behind on Easy, roughly level on Normal (+18 to −47 m) and 23–56 m ahead on Hard.
+- **Measured** (Smarty Kart, Mac emulation): the same scripted driver for 30 s left the computer racers 32–99 m behind on Easy, roughly level on Normal (+18 to −47 m) and 23–56 m ahead on Hard.
 
 
 ## Neon Racer: 4 lanes, coin count
@@ -187,7 +187,7 @@ After every finished race, each player answers **5 general-knowledge questions**
 - **Wider road:** the road went from 3 lanes (16 m) to 4 lanes (21.3 m). `blender/build_track.py` now has `LANE_W` and `N_LANES`; the curbs, walls and verge keep their widths. The centre line is unchanged (nearest separate sections are 70 m apart; the tightest radius is 21 m).
   - `game.js` scales item boxes, boost pads, coin lines, the starting grid, bot lanes, respawn and camera offsets by `track.roadHalf / 8`, so the old track would still work.
   - The 3-lane track is in `archive/track_3lane.*`.
-- **Coins:** the count now keeps going past 10. The speed bonus still stops at 10 coins (+1.2% each, like Mario Kart), and a spin still drops 3. Sunny Kart keeps the Mario Kart cap of 10.
+- **Coins:** the count now keeps going past 10. The speed bonus still stops at 10 coins (+1.2% each, like Mario Kart), and a spin still drops 3. Smarty Kart keeps the Mario Kart cap of 10.
 
 
 ## Hosting for friends (Railway, closed beta)
@@ -216,4 +216,4 @@ The same `server/index.js` runs at home and on Railway.
 - **For a friend:**
   1. On the TV browser, open `https://<domain>/?k=<code>` once. The TV then remembers the code.
   2. Pick a game; the kids scan the QR with their phones.
-- Sunny Kart's track is a fan rip of a Nintendo track. It is included in this closed beta at the owner's decision; keep the repo private and the invite code on.
+- Smarty Kart's track is a fan rip of a Nintendo track. It is included in this closed beta at the owner's decision; keep the repo private and the invite code on.

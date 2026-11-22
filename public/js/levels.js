@@ -1,4 +1,4 @@
-// Difficulty levels, shared by Sunny Kart, Neon Racer and the phone controller.
+// Difficulty levels, shared by Smarty Kart, Neon Racer and the phone controller.
 // One level per race, chosen in the lobby (TV remote ◀ ▶ or any phone) and remembered by the TV (localStorage kr_level).
 // Normal = how the games played before levels existed. Levels change the computer racers and how much the game helps
 // the kid; the kid's own kart handles the same on every level.

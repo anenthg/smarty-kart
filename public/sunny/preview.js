@@ -1,4 +1,4 @@
-// Sunny Kart phone preview: a live 3D turntable of the kart you're building (racer + body + wheels + colour).
+// Smarty Kart phone preview: a live 3D turntable of the kart you're building (racer + body + wheels + colour).
 // Same parts and matcap shading as the TV. Drag to spin; renders only while visible.
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';

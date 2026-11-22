@@ -1,4 +1,4 @@
-// Kid Racer server (Neon Racer + Sunny Kart): serves the TV and phone pages and relays messages over WebSocket.
+// Kid Racer server (Neon Racer + Smarty Kart): serves the TV and phone pages and relays messages over WebSocket.
 //
 // Runs two ways:
 //  * At home (npm start): plain http on PORT plus https on HTTPS_PORT with a self-signed certificate for this computer's
@@ -156,9 +156,9 @@ async function handler(req, res) {
     });
     return;
   }
-  if (p === '/') return send(req, res, path.join(PUBLIC, 'menu.html'));   // start screen: choose Neon Racer or Sunny Kart
+  if (p === '/') return send(req, res, path.join(PUBLIC, 'menu.html'));   // start screen: choose Neon Racer or Smarty Kart
   if (p === '/neon' || p === '/neon/') return send(req, res, path.join(PUBLIC, 'tv.html'));
-  if (p === '/sunny' || p === '/sunny/') return send(req, res, path.join(PUBLIC, 'sunny', 'index.html'));
+  if (p === '/sunny' || p === '/sunny/' || p === '/smarty' || p === '/smarty/') return send(req, res, path.join(PUBLIC, 'sunny', 'index.html'));
   if (p === '/play') return send(req, res, path.join(PUBLIC, 'controller.html'));
   if (p === '/info') {
     // join link + QR for a TV room; the QR carries the room (and the invite code, so phones join without typing it)

@@ -1,15 +1,15 @@
-# 🏎️ Kid Racer: Neon Racer + Sunny Kart
+# 🏎️ Kid Racer: Neon Racer + Smarty Kart
 
 Racing games for the **TV**, played with **phones as controllers**, like AirConsole.
 The race runs in the TV's web browser; each player scans a QR code with their phone and uses it as a gamepad.
 Nothing is installed on the TV or the phones: one computer at home runs a small server, and everything else
 happens in web browsers on your home Wi-Fi.
 
-![Start screen: choose Neon Racer or Sunny Kart](media/start-screen.jpg)
+![Start screen: choose Neon Racer or Smarty Kart](media/start-screen.jpg)
 
-| Neon Racer | Sunny Kart |
+| Neon Racer | Smarty Kart |
 |---|---|
-| ![Neon Racer lobby](media/neon-lobby.jpg) | ![Sunny Kart race](media/sunny-race.jpg) |
+| ![Neon Racer lobby](media/neon-lobby.jpg) | ![Smarty Kart race](media/sunny-race.jpg) |
 | Night-city racing: glowing cars you paint yourself, boost pads, items. | Kart racing in the style of Mario Kart: drifts and mini-turbos, shells and bananas, 4 racers, karts you build. |
 
 **Also included**
@@ -116,7 +116,7 @@ Leave the terminal window open while you play. To stop the server, click the ter
 1. Open the TV's **web browser**.
 2. Type the address from step 1, for example `http://192.168.1.20:8080`. Make sure you include `http://` and `:8080`.
 3. **Bookmark it** so next time it's one click.
-4. You'll see the start screen. Use the remote's **◀ ▶** to choose **Neon Racer** or **Sunny Kart**, then press **OK**.
+4. You'll see the start screen. Use the remote's **◀ ▶** to choose **Neon Racer** or **Smarty Kart**, then press **OK**.
 
 ### 3. Join with the phones
 
@@ -137,7 +137,7 @@ Leave the terminal window open while you play. To stop the server, click the ter
 ### Controls
 
 **On the phone:** the thumbstick on the left steers. On the right: **GO** (gas), **REVERSE**, **ITEM** and **HOP/DRIFT**
-(Sunny Kart). Turn on **Auto-gas** for little ones, or **Tilt steer** to steer by tilting the phone.
+(Smarty Kart). Turn on **Auto-gas** for little ones, or **Tilt steer** to steer by tilting the phone.
 
 **On the TV remote:**
 
@@ -234,7 +234,7 @@ the plain `http://` link (buttons work; only tilt steering doesn't). To get tilt
 <summary><b>The game is slow or jerky on the TV</b></summary>
 
 The games are made to run on modest smart-TV hardware, but very old or very cheap TVs can struggle. Try:
-- **Neon Racer** instead of Sunny Kart; it's lighter.
+- **Neon Racer** instead of Smarty Kart; it's lighter.
 - Closing other apps on the TV, or restarting the TV.
 - A cheap streaming stick (Fire TV Stick, Chromecast with Google TV) or a laptop on HDMI usually runs it smoothly.
 </details>
@@ -262,5 +262,5 @@ they scanned. Each TV needs its own players.
 - 3D: [three.js](https://threejs.org) (MIT). Cars, karts, drivers, items and the Neon Racer track were made for this project in Blender.
 - Voices, sound effects and music generated with [ElevenLabs](https://elevenlabs.io).
 - Quiz questions: a general-knowledge practice set for Class 3 (SKGKO-style), written for this project.
-- Sunny Kart's track is based on a fan-made, Mario Kart-inspired project. Kid Racer is a non-commercial family project
+- Smarty Kart's track is based on a fan-made, Mario Kart-inspired project. Kid Racer is a non-commercial family project
   and is not affiliated with or endorsed by Nintendo.

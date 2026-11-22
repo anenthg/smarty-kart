@@ -1,4 +1,4 @@
-// After-race quiz, shared by Sunny Kart and Neon Racer (TV side).
+// After-race quiz, shared by Smarty Kart and Neon Racer (TV side).
 // Five general-knowledge questions (public/quiz/questions.json, from the owner's SKGKO Class 3 practice set), one each from five
 // different sections, answer order shuffled, no question repeats until all 100 have been asked (sections with unseen questions are preferred).
 // The answers are four giant item boxes on the track; each player's kart drives into the box they pick on their phone
@@ -274,7 +274,7 @@ export class Quiz {
   animate(dt, t) {
     const tr = this.o.track, S0 = this.S0, cam = this.o.camera;
     // camera: behind the karts, looking at the boxes
-    // framing tuned on Sunny Kart's wide road; narrower roads (Neon) pull the camera in so the boxes stay big
+    // framing tuned on Smarty Kart's wide road; narrower roads (Neon) pull the camera in so the boxes stay big
     const f = Math.max(0.55, Math.min(1, (3 * this.gap + this.size) / 16.9));
     const C0 = this.camCfg || (this.camCfg = { back: 2 + 9 * f, y: 2.4 + 2.8 * f, lookY: 2.0 + 0.6 * f, fov: 52 });
     const cp = tr.at(S0 - C0.back + Math.sin(t * 0.4) * 0.3, Math.sin(t * 0.3) * 0.5); cam.position.set(cp.x, C0.y, cp.z);

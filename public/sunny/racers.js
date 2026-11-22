@@ -1,4 +1,4 @@
-// Sunny Kart racers, shared by the TV and the phones.
+// Smarty Kart racers, shared by the TV and the phones.
 // Physics follow Mario Kart 3.js: speed eases towards maxV (rate = acc), turning is a yaw rate that scales with speed,
 // drifting biases the turn by ±1.4 like its driftDirection. Values are small multipliers around 1 so balance is easy.
 export const RACERS = {

@@ -1,7 +1,7 @@
 {
   "name": "kid-racer",
   "version": "1.0.0",
-  "description": "Neon Racer + Sunny Kart: TV racing games with phone controllers",
+  "description": "Neon Racer + Smarty Kart: TV racing games with phone controllers",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",

@@ -141,7 +141,7 @@ body.fx-magnet #bar { box-shadow: 0 0 24px #40a0ff; }
 @keyframes rot { 0%, 30% { transform: rotate(0) } 60%, 100% { transform: rotate(-90deg) } }
 @media (orientation: portrait) { body.playing #rotate { display: flex; } }
 
-/* ---------------- Sunny Kart mode (the TV says game: 'sunny'); Neon Racer looks exactly as before */
+/* ---------------- Smarty Kart mode (the TV says game: 'sunny'); Neon Racer looks exactly as before */
 #sitem, #drift, #simg, #sracers, #scanvas, #stabs { display: none; }
 .btn small { position: absolute; bottom: 8px; left: 0; right: 0; text-align: center; font-size: 11px; font-weight: 800; letter-spacing: .5px; opacity: .85; }
 body.sunny { --bg: #0b2d6e; --panel: #12408f; --line: #2c5cb3; }
@@ -194,7 +194,7 @@ body.menu #menu { display: flex; }
 #menu .g:active { transform: scale(.97); }
 #menu .msub { font-size: 13px; opacity: .7; }
 
-/* Sunny Kart garage: live 3D preview + tabs (Racer / Kart / Wheels / Colour) */
+/* Smarty Kart garage: live 3D preview + tabs (Racer / Kart / Wheels / Colour) */
 body.sunny #scanvas { display: block; position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
 body.sunny .preview.pvready #simg { display: none; }
 body.sunny #stabs { display: flex; }

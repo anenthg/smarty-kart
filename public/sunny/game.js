@@ -1,4 +1,4 @@
-// Sunny Kart, the TV screen. A Mario Kart-style racer built for the family TV (Mali-450, WebGL 1, slow ARM CPU).
+// Smarty Kart, the TV screen. A Mario Kart-style racer built for the family TV (Mali-450, WebGL 1, slow ARM CPU).
 // Engine parts (renderer, batching, projectiles, split screen, pause, HUD loop, phone protocol) are shared with Neon Racer;
 // the kart handling is ported from Mario Kart 3.js (speed eases to top speed, hop → drift with a ±1.4 steering bias,
 // 3 spark levels, the body swings out in a drift, sand slows you, walls bounce you back).
@@ -1315,7 +1315,7 @@ function connectWS() {
         if (p) { if (p.car) { p.car.human = false; p.car.player = null; } players.delete(m.id); if (phase === 'lobby') rebuildSoon(); refreshLobby(); }
         break;
       case 'in': if (p) p.input = { s: clamp(+m.s || 0, -1, 1), g: m.g ? 1 : 0, b: m.b ? 1 : 0, n: m.n ? 1 : 0, i: m.i ? 1 : 0 }; break;
-      case 'garage':   // phones send their Neon Racer car and their Sunny Kart racer together; only the racer matters here
+      case 'garage':   // phones send their Neon Racer car and their Smarty Kart racer together; only the racer matters here
         if (p && m.cfg && RACERS[m.cfg.racer]) {
           const k = sanitizeKart(m.cfg);
           const taken = k.racer !== p.cfg.racer && [...players.values()].some((q) => q !== p && q.cfg.racer === k.racer);

@@ -1,4 +1,4 @@
-/* Sunny Kart TV page. Sized for the TV's 960×540 CSS viewport; .ui blocks scale with --ui (set by game.js).
+/* Smarty Kart TV page. Sized for the TV's 960×540 CSS viewport; .ui blocks scale with --ui (set by game.js).
    No CSS filters/blurs/animated shadows: compositing is expensive on the TV. */
 * { box-sizing: border-box; }
 :root { --ui: 1; }
