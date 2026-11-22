@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#07071a">
+<title>Neon Racer – Controller</title>
+<script src="/js/room.js"></script>
+<script type="importmap">
+{ "imports": { "three": "/vendor/three/build/three.module.js", "three/addons/": "/vendor/three/examples/jsm/" } }
+</script>
+<link rel="stylesheet" href="/css/controller.css">
+</head>
+<body>
+<div id="join" class="screen on">
+  <h1>NEON RACER</h1>
+  <div>Type your name</div>
+  <input id="name" maxlength="12" placeholder="Racer" autocomplete="off">
+  <div id="roomrow" hidden><div>Room code (shown on the TV)</div><input id="room" maxlength="8" placeholder="ABCD" autocomplete="off" autocapitalize="characters"></div>
+  <button class="big" id="joinBtn">JOIN</button>
+  <div id="msg"></div>
+</div>
+
+<div id="pad" class="screen">
+  <div id="bar">
+    <div id="swatch"></div><span id="pname">Player</span>
+    <span id="status">Connecting…</span>
+    <div id="hudInfo">
+      <span id="hPos">1<small>st</small></span>
+      <span id="hLap">LAP 1/3</span>
+      <span id="hCoins">🪙 0</span>
+      <span id="hItem"></span>
+    </div>
+    <button id="fsBtn" aria-label="Full screen">⛶</button>
+    <button id="pauseBtn" aria-label="Pause">⏸</button>
+  </div>
+  <!-- Left: sideways thumbstick (or the tilt wheel when Tilt steer is on). Right: GO over REVERSE.
+       Items and boost fire by themselves. -->
+  <div id="controls">
+    <div id="stickArea">
+      <div class="track"></div>
+      <div class="sarrow" id="al">◀</div><div class="sarrow" id="ar">▶</div>
+      <div id="stick"></div>
+      <div id="wheelBox">
+        <svg id="wheel" viewBox="-50 -50 100 100"><circle r="44" fill="none" stroke="var(--c)" stroke-width="9"/><circle r="9" fill="var(--c)"/>
+          <path d="M-40 4 L-9 2 M40 4 L9 2 M0 9 L0 40" stroke="var(--c)" stroke-width="8" stroke-linecap="round"/><rect x="-4" y="-49" width="8" height="12" rx="3" fill="#fff"/></svg>
+      </div>
+      <div class="lbl" id="stickLbl">STEER</div>
+    </div>
+    <div class="right">
+      <div class="btn" id="gas"><span class="ico">▲</span>GO</div>
+      <div class="btn" id="brake"><span class="ico">▼</span>REVERSE</div>
+      <!-- Sunny Kart only: ITEM (top left) and HOP / DRIFT (bottom left, next to GO) -->
+      <div class="btn" id="sitem"><span id="sitemIco">·</span><small>ITEM</small></div>
+      <div class="btn" id="drift">HOP / DRIFT<small>hold through corners</small></div>
+    </div>
+    <div class="btn" id="item" hidden><span id="itemIco">·</span></div>
+    <div class="btn" id="nitro" hidden><div class="fill" id="nfill"></div></div>
+  </div>
+
+  <!-- garage / lobby -->
+  <div id="garage">
+    <div class="preview">
+      <canvas id="gcanvas"></canvas>
+      <img id="simg" alt="">
+      <canvas id="scanvas"></canvas>
+      <div class="pv-top"><div id="carName">Viper</div><div id="carTag">All-rounder</div></div>
+      <button class="arrow l" id="carPrev">◀</button>
+      <button class="arrow r" id="carNext">▶</button>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="side">
+      <div class="tabs" id="stabs">
+        <button data-st="racer" class="on">🙂 Racer</button><button data-st="body">🏎️ Kart</button><button data-st="wheels">🛞 Wheels</button><button data-st="paint">🎨 Colour</button>
+      </div>
+      <div id="sracers"></div>
+      <div class="tabs" id="tabs">
+        <button data-tab="paint" class="on">🎨 Paint</button>
+        <button data-tab="pattern">🔥 Style</button>
+        <button data-tab="finish">✨ Shine</button>
+        <button data-tab="glow">💡 Glow</button>
+      </div>
+      <div class="gbody" id="gbody"></div>
+      <div class="lvlrow" id="lvlrow"></div>
+      <div class="chips">
+        <label class="chip"><input type="checkbox" id="auto"> Auto-gas</label>
+        <label class="chip"><input type="checkbox" id="tiltOn"> Tilt steer</label>
+        <label class="chip"><input type="checkbox" id="sfxOn"> Sounds</label>
+      </div>
+      <div id="tiltMsg"></div>
+      <div class="startrow"><button class="big ghost games" id="gamesBtn">🎮 Games</button><button class="big start" id="startBtn">START RACE</button></div>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div class="title" id="otitle">Waiting…</div>
+    <div class="sub" id="osub"></div>
+    <div class="lvlrow" id="lvlrow2"></div>
+    <div class="obtns">
+      <button class="big" id="obtn">PLAY AGAIN</button>
+      <button class="big ghost" id="obtn2">🎨 Change car</button>
+    </div>
+  </div>
+  <!-- after-race quiz: four big answer buttons (same colours/shapes as the boxes on the TV) -->
+  <div id="quizpad">
+    <div id="qzq"></div>
+    <div id="qzgrid">
+      <button class="qzb" data-k="0" style="--c:#e8202a"><span class="s">▲</span><span class="t"></span></button>
+      <button class="qzb" data-k="1" style="--c:#1f7bff"><span class="s">◆</span><span class="t"></span></button>
+      <button class="qzb" data-k="2" style="--c:#e0a800"><span class="s">●</span><span class="t"></span></button>
+      <button class="qzb" data-k="3" style="--c:#1fa64a"><span class="s">■</span><span class="t"></span></button>
+    </div>
+    <div id="qzmsg"></div>
+  </div>
+  <div id="menu">
+    <div class="mt">Which game?</div>
+    <div class="gs">
+      <button class="g neon" data-game="neon">NEON RACER<small>Night city racing</small></button>
+      <button class="g sunny" data-game="sunny">SUNNY KART<small>Mario-style kart racing</small></button>
+    </div>
+    <div class="msub">You can also choose with the TV remote</div>
+  </div>
+  <div id="toast"></div>
+  <div id="flash"></div>
+</div>
+
+<div id="rotate"><div class="ico">📱</div>Turn your phone sideways</div>
+
+<script>
+// ---------------------------------------------------------------- no zooming
+// iOS Safari ignores user-scalable=no, so block pinch / double-tap zoom in JS too,
+// and snap back to 1x if the page somehow ends up zoomed.
+(() => {
+  const block = (e) => e.preventDefault();
+  for (const ev of ['gesturestart', 'gesturechange', 'gestureend']) document.addEventListener(ev, block, { passive: false });
+  document.addEventListener('touchmove', (e) => { if (e.touches.length > 1 || (e.scale && e.scale !== 1)) e.preventDefault(); }, { passive: false });
+  document.addEventListener('dblclick', block, { passive: false });
+  let lastTouch = 0;
+  document.addEventListener('touchend', (e) => {
+    const now = Date.now();
+    if (now - lastTouch < 350 && e.target.tagName !== 'INPUT') e.preventDefault();
+    lastTouch = now;
+  }, { passive: false });
+  document.addEventListener('wheel', (e) => { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
+  const meta = document.querySelector('meta[name=viewport]');
+  const base = meta.content;
+  const unzoom = () => {
+    if (window.visualViewport && window.visualViewport.scale > 1.01) {
+      meta.content = base + ', minimum-scale=1';
+      setTimeout(() => { meta.content = base; window.scrollTo(0, 0); }, 50);
+    }
+  };
+  window.visualViewport?.addEventListener('resize', unzoom);
+  document.addEventListener('touchend', () => setTimeout(unzoom, 100));
+})();
+</script>
+<script type="module" src="/js/controller.js"></script>
+</body>
+</html>

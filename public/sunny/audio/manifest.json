@@ -1,0 +1,334 @@
+{
+ "engine": {
+  "kind": "loop",
+  "dur": 2.0
+ },
+ "skid": {
+  "kind": "loop",
+  "dur": 1.6
+ },
+ "offroad": {
+  "kind": "loop",
+  "dur": 1.6
+ },
+ "hop": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "spark1": {
+  "kind": "sfx",
+  "dur": 0.6
+ },
+ "spark3": {
+  "kind": "sfx",
+  "dur": 0.8
+ },
+ "turbo": {
+  "kind": "sfx",
+  "dur": 1.2
+ },
+ "dash": {
+  "kind": "sfx",
+  "dur": 1.0
+ },
+ "coin": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "itembox": {
+  "kind": "sfx",
+  "dur": 0.68
+ },
+ "roulette": {
+  "kind": "sfx",
+  "dur": 1.2
+ },
+ "itemget": {
+  "kind": "sfx",
+  "dur": 0.6
+ },
+ "throw": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "shellhit": {
+  "kind": "sfx",
+  "dur": 0.8
+ },
+ "banana": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "slip": {
+  "kind": "sfx",
+  "dur": 1.0
+ },
+ "mushroom": {
+  "kind": "sfx",
+  "dur": 1.0
+ },
+ "star": {
+  "kind": "sfx",
+  "dur": 2.0
+ },
+ "bullet": {
+  "kind": "sfx",
+  "dur": 1.48
+ },
+ "horn": {
+  "kind": "sfx",
+  "dur": 1.0
+ },
+ "wall": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "bump": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "beep": {
+  "kind": "sfx",
+  "dur": 0.48
+ },
+ "go": {
+  "kind": "sfx",
+  "dur": 0.8
+ },
+ "lap": {
+  "kind": "sfx",
+  "dur": 0.8
+ },
+ "finallap": {
+  "kind": "sfx",
+  "dur": 2.0
+ },
+ "finish": {
+  "kind": "sfx",
+  "dur": 3.0
+ },
+ "win": {
+  "kind": "sfx",
+  "dur": 3.0
+ },
+ "lose": {
+  "kind": "sfx",
+  "dur": 2.0
+ },
+ "cheer": {
+  "kind": "sfx",
+  "dur": 2.48
+ },
+ "select": {
+  "kind": "sfx",
+  "dur": 0.479
+ },
+ "whoosh": {
+  "kind": "sfx",
+  "dur": 0.8
+ },
+ "v_ruby_pick": {
+  "kind": "voice",
+  "dur": 2.023
+ },
+ "v_ruby_start": {
+  "kind": "voice",
+  "dur": 1.073
+ },
+ "v_ruby_turbo": {
+  "kind": "voice",
+  "dur": 0.867
+ },
+ "v_ruby_hit": {
+  "kind": "voice",
+  "dur": 1.96
+ },
+ "v_ruby_gotcha": {
+  "kind": "voice",
+  "dur": 1.534
+ },
+ "v_ruby_item": {
+  "kind": "voice",
+  "dur": 2.08
+ },
+ "v_ruby_star": {
+  "kind": "voice",
+  "dur": 2.405
+ },
+ "v_ruby_pass": {
+  "kind": "voice",
+  "dur": 0.621
+ },
+ "v_ruby_win": {
+  "kind": "voice",
+  "dur": 3.258
+ },
+ "v_ruby_lose": {
+  "kind": "voice",
+  "dur": 3.365
+ },
+ "v_lime_pick": {
+  "kind": "voice",
+  "dur": 2.129
+ },
+ "v_lime_start": {
+  "kind": "voice",
+  "dur": 1.285
+ },
+ "v_lime_turbo": {
+  "kind": "voice",
+  "dur": 1.247
+ },
+ "v_lime_hit": {
+  "kind": "voice",
+  "dur": 1.784
+ },
+ "v_lime_gotcha": {
+  "kind": "voice",
+  "dur": 1.561
+ },
+ "v_lime_item": {
+  "kind": "voice",
+  "dur": 1.038
+ },
+ "v_lime_star": {
+  "kind": "voice",
+  "dur": 2.845
+ },
+ "v_lime_pass": {
+  "kind": "voice",
+  "dur": 0.959
+ },
+ "v_lime_win": {
+  "kind": "voice",
+  "dur": 3.445
+ },
+ "v_lime_lose": {
+  "kind": "voice",
+  "dur": 3.553
+ },
+ "v_sunny_pick": {
+  "kind": "voice",
+  "dur": 2.56
+ },
+ "v_sunny_start": {
+  "kind": "voice",
+  "dur": 1.189
+ },
+ "v_sunny_turbo": {
+  "kind": "voice",
+  "dur": 1.243
+ },
+ "v_sunny_hit": {
+  "kind": "voice",
+  "dur": 1.726
+ },
+ "v_sunny_gotcha": {
+  "kind": "voice",
+  "dur": 1.153
+ },
+ "v_sunny_item": {
+  "kind": "voice",
+  "dur": 0.854
+ },
+ "v_sunny_star": {
+  "kind": "voice",
+  "dur": 1.781
+ },
+ "v_sunny_pass": {
+  "kind": "voice",
+  "dur": 0.533
+ },
+ "v_sunny_win": {
+  "kind": "voice",
+  "dur": 3.094
+ },
+ "v_sunny_lose": {
+  "kind": "voice",
+  "dur": 4.335
+ },
+ "v_plum_pick": {
+  "kind": "voice",
+  "dur": 2.693
+ },
+ "v_plum_start": {
+  "kind": "voice",
+  "dur": 1.388
+ },
+ "v_plum_turbo": {
+  "kind": "voice",
+  "dur": 1.416
+ },
+ "v_plum_hit": {
+  "kind": "voice",
+  "dur": 1.856
+ },
+ "v_plum_gotcha": {
+  "kind": "voice",
+  "dur": 1.709
+ },
+ "v_plum_item": {
+  "kind": "voice",
+  "dur": 2.582
+ },
+ "v_plum_star": {
+  "kind": "voice",
+  "dur": 2.461
+ },
+ "v_plum_pass": {
+  "kind": "voice",
+  "dur": 2.95
+ },
+ "v_plum_win": {
+  "kind": "voice",
+  "dur": 3.566
+ },
+ "v_plum_lose": {
+  "kind": "voice",
+  "dur": 4.946
+ },
+ "a_3": {
+  "kind": "voice",
+  "dur": 0.561
+ },
+ "a_2": {
+  "kind": "voice",
+  "dur": 0.902
+ },
+ "a_1": {
+  "kind": "voice",
+  "dur": 0.482
+ },
+ "a_go": {
+  "kind": "voice",
+  "dur": 0.289
+ },
+ "a_final": {
+  "kind": "voice",
+  "dur": 1.123
+ },
+ "a_wrong": {
+  "kind": "voice",
+  "dur": 1.867
+ },
+ "a_finish": {
+  "kind": "voice",
+  "dur": 0.682
+ },
+ "a_choose": {
+  "kind": "voice",
+  "dur": 1.279
+ },
+ "a_welcome": {
+  "kind": "voice",
+  "dur": 1.918
+ },
+ "music_race": {
+  "kind": "music",
+  "dur": 48.091
+ },
+ "music_menu": {
+  "kind": "music",
+  "dur": 30.041
+ }
+}

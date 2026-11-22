@@ -1,0 +1,1238 @@
+{
+ "source": "SKGKO Class 3 – 100 Question Practice Set (owner, Nov 18 2026)",
+ "sections": {
+  "A": {
+   "name": "General Awareness",
+   "icon": "🏛️"
+  },
+  "B": {
+   "name": "Science",
+   "icon": "🔬"
+  },
+  "C": {
+   "name": "Films & Art",
+   "icon": "🎭"
+  },
+  "D": {
+   "name": "States & Capitals",
+   "icon": "🗺️"
+  },
+  "E": {
+   "name": "Sports",
+   "icon": "🏏"
+  },
+  "F": {
+   "name": "Thinking Cap",
+   "icon": "🧠"
+  }
+ },
+ "questions": [
+  {
+   "n": 1,
+   "q": "The Taj Mahal is located in which city?",
+   "o": [
+    "Delhi",
+    "Agra",
+    "Jaipur",
+    "Lucknow"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 2,
+   "q": "Who built the Taj Mahal?",
+   "o": [
+    "Akbar",
+    "Babur",
+    "Shah Jahan",
+    "Humayun"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 3,
+   "q": "The Qutub Minar is in which city?",
+   "o": [
+    "Delhi",
+    "Mumbai",
+    "Kolkata",
+    "Hyderabad"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 4,
+   "q": "The Gateway of India stands in which city?",
+   "o": [
+    "Chennai",
+    "Mumbai",
+    "Goa",
+    "Kochi"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 5,
+   "q": "The Charminar is a famous monument of:",
+   "o": [
+    "Bengaluru",
+    "Chennai",
+    "Pune",
+    "Hyderabad"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 6,
+   "q": "India Gate in New Delhi was built in memory of:",
+   "o": [
+    "soldiers who died in war",
+    "kings of Delhi",
+    "famous poets",
+    "scientists"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 7,
+   "q": "The Golden Temple is in which city?",
+   "o": [
+    "Patiala",
+    "Ludhiana",
+    "Amritsar",
+    "Jalandhar"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 8,
+   "q": "The Meenakshi Amman Temple is in:",
+   "o": [
+    "Thanjavur",
+    "Madurai",
+    "Tirupati",
+    "Mysuru"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 9,
+   "q": "The Statue of Liberty is in which country?",
+   "o": [
+    "USA",
+    "France",
+    "UK",
+    "Canada"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 10,
+   "q": "The Eiffel Tower is in which city?",
+   "o": [
+    "London",
+    "Rome",
+    "Paris",
+    "Berlin"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 11,
+   "q": "The Great Wall is in which country?",
+   "o": [
+    "Japan",
+    "China",
+    "Korea",
+    "Mongolia"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 12,
+   "q": "The Pyramids of Giza are in:",
+   "o": [
+    "Iraq",
+    "Greece",
+    "Mexico",
+    "Egypt"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 13,
+   "q": "Who wrote the Harry Potter books?",
+   "o": [
+    "J.K. Rowling",
+    "Roald Dahl",
+    "Enid Blyton",
+    "Ruskin Bond"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 14,
+   "q": "Who wrote Malgudi Days?",
+   "o": [
+    "Ruskin Bond",
+    "Premchand",
+    "R.K. Narayan",
+    "Rabindranath Tagore"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 15,
+   "q": "Who wrote our National Anthem, Jana Gana Mana?",
+   "o": [
+    "Bankim Chandra Chattopadhyay",
+    "Rabindranath Tagore",
+    "Sarojini Naidu",
+    "Subramania Bharati"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 16,
+   "q": "Who wrote our National Song, Vande Mataram?",
+   "o": [
+    "Bankim Chandra Chattopadhyay",
+    "Rabindranath Tagore",
+    "Mahatma Gandhi",
+    "Sarojini Naidu"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 17,
+   "q": "Who is called the Father of the Nation in India?",
+   "o": [
+    "Jawaharlal Nehru",
+    "Sardar Patel",
+    "Subhas Chandra Bose",
+    "Mahatma Gandhi"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 18,
+   "q": "Who was the first Prime Minister of India?",
+   "o": [
+    "Mahatma Gandhi",
+    "Jawaharlal Nehru",
+    "Lal Bahadur Shastri",
+    "Dr. Rajendra Prasad"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 19,
+   "q": "Who was the first President of India?",
+   "o": [
+    "Dr. S. Radhakrishnan",
+    "Dr. Zakir Husain",
+    "Dr. Rajendra Prasad",
+    "Dr. A.P.J. Abdul Kalam"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 20,
+   "q": "In which year did India become independent?",
+   "o": [
+    "1947",
+    "1950",
+    "1942",
+    "1857"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 21,
+   "q": "Republic Day is celebrated on:",
+   "o": [
+    "15 August",
+    "26 January",
+    "2 October",
+    "14 November"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 22,
+   "q": "Children's Day (14 November) is the birthday of:",
+   "o": [
+    "Mahatma Gandhi",
+    "A.P.J. Abdul Kalam",
+    "Jawaharlal Nehru",
+    "Rabindranath Tagore"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 23,
+   "q": "Who is known as the \"Missile Man of India\"?",
+   "o": [
+    "Homi Bhabha",
+    "Vikram Sarabhai",
+    "C.V. Raman",
+    "A.P.J. Abdul Kalam"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 24,
+   "q": "Who was the first person to walk on the Moon?",
+   "o": [
+    "Neil Armstrong",
+    "Yuri Gagarin",
+    "Rakesh Sharma",
+    "Buzz Aldrin"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 25,
+   "q": "Who was the first Indian to travel to space?",
+   "o": [
+    "Kalpana Chawla",
+    "Rakesh Sharma",
+    "Sunita Williams",
+    "Shubhanshu Shukla"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 26,
+   "q": "Mother Teresa served the poor mainly in which city?",
+   "o": [
+    "Mumbai",
+    "Chennai",
+    "Kolkata",
+    "Delhi"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 27,
+   "q": "What does ISRO stand for?",
+   "o": [
+    "Indian Space Research Organisation",
+    "Indian Science Research Office",
+    "International Space Rocket Organisation",
+    "Indian Satellite Research Office"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 28,
+   "q": "What does UN stand for?",
+   "o": [
+    "Union of Nations",
+    "United Nations",
+    "United Nature",
+    "Universal Nations"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 29,
+   "q": "What does WHO stand for?",
+   "o": [
+    "World Help Organisation",
+    "Wide Health Office",
+    "World Hospital Organisation",
+    "World Health Organization"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 30,
+   "q": "What are the colours of the Indian flag, from top to bottom?",
+   "o": [
+    "Saffron, white, green",
+    "Green, white, saffron",
+    "Saffron, green, white",
+    "White, saffron, green"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 31,
+   "q": "How many spokes does the Ashoka Chakra on our flag have?",
+   "o": [
+    "12",
+    "20",
+    "24",
+    "32"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 32,
+   "q": "Which country's flag has a red maple leaf?",
+   "o": [
+    "USA",
+    "Canada",
+    "Japan",
+    "Australia"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 33,
+   "q": "The flag of Japan shows:",
+   "o": [
+    "a star",
+    "a crescent moon",
+    "a maple leaf",
+    "a red circle on white"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 34,
+   "q": "Which is the largest ocean in the world?",
+   "o": [
+    "Pacific Ocean",
+    "Atlantic Ocean",
+    "Indian Ocean",
+    "Arctic Ocean"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 35,
+   "q": "How many continents are there in the world?",
+   "o": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 36,
+   "q": "Which is the largest continent?",
+   "o": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "Antarctica"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 37,
+   "q": "Which continent is covered with ice and is home to penguins?",
+   "o": [
+    "Asia",
+    "Europe",
+    "Africa",
+    "Antarctica"
+   ],
+   "a": 3,
+   "sec": "A"
+  },
+  {
+   "n": 38,
+   "q": "Which ocean is named after a country?",
+   "o": [
+    "Pacific Ocean",
+    "Atlantic Ocean",
+    "Indian Ocean",
+    "Arctic Ocean"
+   ],
+   "a": 2,
+   "sec": "A"
+  },
+  {
+   "n": 39,
+   "q": "Which is the smallest continent?",
+   "o": [
+    "Australia",
+    "Europe",
+    "South America",
+    "Africa"
+   ],
+   "a": 0,
+   "sec": "A"
+  },
+  {
+   "n": 40,
+   "q": "In 2023, India's Chandrayaan-3 landed on which part of the Moon?",
+   "o": [
+    "Near the north pole",
+    "Near the south pole",
+    "On the equator",
+    "It did not land"
+   ],
+   "a": 1,
+   "sec": "A"
+  },
+  {
+   "n": 41,
+   "q": "Which is the largest planet in our solar system?",
+   "o": [
+    "Mars",
+    "Saturn",
+    "Jupiter",
+    "Neptune"
+   ],
+   "a": 2,
+   "sec": "B"
+  },
+  {
+   "n": 42,
+   "q": "Which planet is called the \"Red Planet\"?",
+   "o": [
+    "Mars",
+    "Venus",
+    "Mercury",
+    "Earth"
+   ],
+   "a": 0,
+   "sec": "B"
+  },
+  {
+   "n": 43,
+   "q": "Which planet is closest to the Sun?",
+   "o": [
+    "Venus",
+    "Mercury",
+    "Earth",
+    "Mars"
+   ],
+   "a": 1,
+   "sec": "B"
+  },
+  {
+   "n": 44,
+   "q": "Which planet is famous for its beautiful rings?",
+   "o": [
+    "Earth",
+    "Mars",
+    "Venus",
+    "Saturn"
+   ],
+   "a": 3,
+   "sec": "B"
+  },
+  {
+   "n": 45,
+   "q": "What is the natural satellite of the Earth?",
+   "o": [
+    "The Sun",
+    "Mars",
+    "The Moon",
+    "Venus"
+   ],
+   "a": 2,
+   "sec": "B"
+  },
+  {
+   "n": 46,
+   "q": "The Sun is a:",
+   "o": [
+    "star",
+    "planet",
+    "satellite",
+    "comet"
+   ],
+   "a": 0,
+   "sec": "B"
+  },
+  {
+   "n": 47,
+   "q": "Which is the highest mountain peak in the world?",
+   "o": [
+    "K2",
+    "Mount Everest",
+    "Kanchenjunga",
+    "Nanda Devi"
+   ],
+   "a": 1,
+   "sec": "B"
+  },
+  {
+   "n": 48,
+   "q": "Which river is commonly called the longest river in the world?",
+   "o": [
+    "Amazon",
+    "Ganga",
+    "Nile",
+    "Yangtze"
+   ],
+   "a": 2,
+   "sec": "B"
+  },
+  {
+   "n": 49,
+   "q": "Which is the largest desert in India?",
+   "o": [
+    "Sahara",
+    "Gobi",
+    "Kalahari",
+    "Thar"
+   ],
+   "a": 3,
+   "sec": "B"
+  },
+  {
+   "n": 50,
+   "q": "Water freezes into ice at:",
+   "o": [
+    "0°C",
+    "10°C",
+    "50°C",
+    "100°C"
+   ],
+   "a": 0,
+   "sec": "B"
+  },
+  {
+   "n": 51,
+   "q": "Which gas do we breathe in to stay alive?",
+   "o": [
+    "Carbon dioxide",
+    "Oxygen",
+    "Nitrogen",
+    "Hydrogen"
+   ],
+   "a": 1,
+   "sec": "B"
+  },
+  {
+   "n": 52,
+   "q": "Green plants make their own food by a process called:",
+   "o": [
+    "digestion",
+    "breathing",
+    "photosynthesis",
+    "evaporation"
+   ],
+   "a": 2,
+   "sec": "B"
+  },
+  {
+   "n": 53,
+   "q": "Which instrument is used to measure body temperature?",
+   "o": [
+    "Barometer",
+    "Speedometer",
+    "Stethoscope",
+    "Thermometer"
+   ],
+   "a": 3,
+   "sec": "B"
+  },
+  {
+   "n": 54,
+   "q": "Bharatanatyam is a classical dance of which state?",
+   "o": [
+    "Tamil Nadu",
+    "Kerala",
+    "Odisha",
+    "Manipur"
+   ],
+   "a": 0,
+   "sec": "C"
+  },
+  {
+   "n": 55,
+   "q": "Kathakali is a classical dance from:",
+   "o": [
+    "Karnataka",
+    "Kerala",
+    "Punjab",
+    "Assam"
+   ],
+   "a": 1,
+   "sec": "C"
+  },
+  {
+   "n": 56,
+   "q": "Odissi dance comes from which state?",
+   "o": [
+    "Bihar",
+    "West Bengal",
+    "Odisha",
+    "Gujarat"
+   ],
+   "a": 2,
+   "sec": "C"
+  },
+  {
+   "n": 57,
+   "q": "Kuchipudi is a classical dance of:",
+   "o": [
+    "Tamil Nadu",
+    "Maharashtra",
+    "Rajasthan",
+    "Andhra Pradesh"
+   ],
+   "a": 3,
+   "sec": "C"
+  },
+  {
+   "n": 58,
+   "q": "Bhangra is a lively folk dance of:",
+   "o": [
+    "Punjab",
+    "Gujarat",
+    "Assam",
+    "Rajasthan"
+   ],
+   "a": 0,
+   "sec": "C"
+  },
+  {
+   "n": 59,
+   "q": "Garba is a folk dance usually performed during Navratri in:",
+   "o": [
+    "Maharashtra",
+    "Gujarat",
+    "Bihar",
+    "Kerala"
+   ],
+   "a": 1,
+   "sec": "C"
+  },
+  {
+   "n": 60,
+   "q": "Ustad Zakir Hussain was famous for playing the:",
+   "o": [
+    "sitar",
+    "flute",
+    "tabla",
+    "veena"
+   ],
+   "a": 2,
+   "sec": "C"
+  },
+  {
+   "n": 61,
+   "q": "Pandit Ravi Shankar was a famous player of the:",
+   "o": [
+    "sitar",
+    "tabla",
+    "shehnai",
+    "santoor"
+   ],
+   "a": 0,
+   "sec": "C"
+  },
+  {
+   "n": 62,
+   "q": "Lata Mangeshkar was a famous Indian:",
+   "o": [
+    "dancer",
+    "singer",
+    "painter",
+    "cricketer"
+   ],
+   "a": 1,
+   "sec": "C"
+  },
+  {
+   "n": 63,
+   "q": "Which is India's highest award in the field of cinema?",
+   "o": [
+    "Arjuna Award",
+    "Dronacharya Award",
+    "Dadasaheb Phalke Award",
+    "Khel Ratna Award"
+   ],
+   "a": 2,
+   "sec": "C"
+  },
+  {
+   "n": 64,
+   "q": "What is the capital of Karnataka?",
+   "o": [
+    "Bengaluru",
+    "Mysuru",
+    "Mangaluru",
+    "Hubballi"
+   ],
+   "a": 0,
+   "sec": "D"
+  },
+  {
+   "n": 65,
+   "q": "What is the capital of Rajasthan?",
+   "o": [
+    "Jodhpur",
+    "Jaipur",
+    "Udaipur",
+    "Ajmer"
+   ],
+   "a": 1,
+   "sec": "D"
+  },
+  {
+   "n": 66,
+   "q": "What is the capital of West Bengal?",
+   "o": [
+    "Darjeeling",
+    "Siliguri",
+    "Kolkata",
+    "Howrah"
+   ],
+   "a": 2,
+   "sec": "D"
+  },
+  {
+   "n": 67,
+   "q": "What is the capital of Kerala?",
+   "o": [
+    "Kochi",
+    "Kozhikode",
+    "Thrissur",
+    "Thiruvananthapuram"
+   ],
+   "a": 3,
+   "sec": "D"
+  },
+  {
+   "n": 68,
+   "q": "Which of these is a Union Territory?",
+   "o": [
+    "Ladakh",
+    "Goa",
+    "Sikkim",
+    "Assam"
+   ],
+   "a": 0,
+   "sec": "D"
+  },
+  {
+   "n": 69,
+   "q": "How many states are there in India?",
+   "o": [
+    "25",
+    "28",
+    "29",
+    "36"
+   ],
+   "a": 1,
+   "sec": "D"
+  },
+  {
+   "n": 70,
+   "q": "Which is the largest state of India by area?",
+   "o": [
+    "Uttar Pradesh",
+    "Maharashtra",
+    "Rajasthan",
+    "Madhya Pradesh"
+   ],
+   "a": 2,
+   "sec": "D"
+  },
+  {
+   "n": 71,
+   "q": "Kathmandu is the capital of which neighbouring country?",
+   "o": [
+    "Bhutan",
+    "Bangladesh",
+    "Sri Lanka",
+    "Nepal"
+   ],
+   "a": 3,
+   "sec": "D"
+  },
+  {
+   "n": 72,
+   "q": "Which island country lies to the south of India?",
+   "o": [
+    "Sri Lanka",
+    "Bangladesh",
+    "Bhutan",
+    "Nepal"
+   ],
+   "a": 0,
+   "sec": "D"
+  },
+  {
+   "n": 73,
+   "q": "Thimphu is the capital of:",
+   "o": [
+    "Nepal",
+    "Bhutan",
+    "Myanmar",
+    "Bangladesh"
+   ],
+   "a": 1,
+   "sec": "D"
+  },
+  {
+   "n": 74,
+   "q": "How many players of one team play on the field in a cricket match?",
+   "o": [
+    "6",
+    "9",
+    "11",
+    "15"
+   ],
+   "a": 2,
+   "sec": "E"
+  },
+  {
+   "n": 75,
+   "q": "Sachin Tendulkar is a famous player of:",
+   "o": [
+    "cricket",
+    "hockey",
+    "football",
+    "tennis"
+   ],
+   "a": 0,
+   "sec": "E"
+  },
+  {
+   "n": 76,
+   "q": "Viswanathan Anand is a world-famous player of:",
+   "o": [
+    "carrom",
+    "chess",
+    "badminton",
+    "table tennis"
+   ],
+   "a": 1,
+   "sec": "E"
+  },
+  {
+   "n": 77,
+   "q": "A shuttlecock is used in which game?",
+   "o": [
+    "Tennis",
+    "Squash",
+    "Table tennis",
+    "Badminton"
+   ],
+   "a": 3,
+   "sec": "E"
+  },
+  {
+   "n": 78,
+   "q": "P.V. Sindhu plays which sport?",
+   "o": [
+    "Badminton",
+    "Tennis",
+    "Wrestling",
+    "Shooting"
+   ],
+   "a": 0,
+   "sec": "E"
+  },
+  {
+   "n": 79,
+   "q": "Neeraj Chopra won an Olympic gold medal at Tokyo 2020 in:",
+   "o": [
+    "shot put",
+    "discus throw",
+    "javelin throw",
+    "long jump"
+   ],
+   "a": 2,
+   "sec": "E"
+  },
+  {
+   "n": 80,
+   "q": "M.C. Mary Kom is a famous Indian:",
+   "o": [
+    "wrestler",
+    "boxer",
+    "swimmer",
+    "archer"
+   ],
+   "a": 1,
+   "sec": "E"
+  },
+  {
+   "n": 81,
+   "q": "The word \"checkmate\" is used in which game?",
+   "o": [
+    "Cricket",
+    "Kabaddi",
+    "Carrom",
+    "Chess"
+   ],
+   "a": 3,
+   "sec": "E"
+  },
+  {
+   "n": 82,
+   "q": "Major Dhyan Chand, the \"Wizard\", was a legend of which sport?",
+   "o": [
+    "Hockey",
+    "Football",
+    "Cricket",
+    "Kabaddi"
+   ],
+   "a": 0,
+   "sec": "E"
+  },
+  {
+   "n": 83,
+   "q": "Which of these is an indoor game?",
+   "o": [
+    "Cricket",
+    "Football",
+    "Carrom",
+    "Hockey"
+   ],
+   "a": 2,
+   "sec": "E"
+  },
+  {
+   "n": 84,
+   "q": "India became independent on 15 August 1947. How many years of independence did India complete on 15 August 2025?",
+   "o": [
+    "77",
+    "78",
+    "79",
+    "80"
+   ],
+   "a": 1,
+   "sec": "F"
+  },
+  {
+   "n": 85,
+   "q": "Find the odd one out.",
+   "o": [
+    "Mercury",
+    "Venus",
+    "Moon",
+    "Mars"
+   ],
+   "a": 2,
+   "sec": "F",
+   "why": "The Moon is a satellite; the others are planets."
+  },
+  {
+   "n": 86,
+   "q": "Find the odd one out.",
+   "o": [
+    "Kathak",
+    "Odissi",
+    "Garba",
+    "Kuchipudi"
+   ],
+   "a": 2,
+   "sec": "F",
+   "why": "Garba is a folk dance; the others are classical dances."
+  },
+  {
+   "n": 87,
+   "q": "Sachin Tendulkar : Cricket :: Viswanathan Anand : ?",
+   "o": [
+    "Chess",
+    "Tennis",
+    "Hockey",
+    "Badminton"
+   ],
+   "a": 0,
+   "sec": "F"
+  },
+  {
+   "n": 88,
+   "q": "New Delhi : India :: Kathmandu : ?",
+   "o": [
+    "Bhutan",
+    "Nepal",
+    "China",
+    "Sri Lanka"
+   ],
+   "a": 1,
+   "sec": "F"
+  },
+  {
+   "n": 89,
+   "q": "Arrange from smallest to biggest.",
+   "o": [
+    "Jupiter, Earth, Moon",
+    "Earth, Moon, Jupiter",
+    "Moon, Jupiter, Earth",
+    "Moon, Earth, Jupiter"
+   ],
+   "a": 3,
+   "sec": "F"
+  },
+  {
+   "n": 90,
+   "q": "Riya is facing north. She turns to her right. Which direction is she facing now?",
+   "o": [
+    "South",
+    "West",
+    "East",
+    "North"
+   ],
+   "a": 2,
+   "sec": "F",
+   "why": "Turning right from north means facing east."
+  },
+  {
+   "n": 91,
+   "q": "The Sun rises in the east. In the morning, in which direction will your shadow fall?",
+   "o": [
+    "East",
+    "West",
+    "North",
+    "South"
+   ],
+   "a": 1,
+   "sec": "F",
+   "why": "In the morning the Sun is in the east, so your shadow falls to the west."
+  },
+  {
+   "n": 92,
+   "q": "Today is 30 September. After how many days will it be Gandhi Jayanti?",
+   "o": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "a": 0,
+   "sec": "F",
+   "why": "1 October is 1 day away, so 2 October is 2 days away."
+  },
+  {
+   "n": 93,
+   "q": "Which pair is NOT correctly matched?",
+   "o": [
+    "Golden Temple – Amritsar",
+    "Charminar – Hyderabad",
+    "Gateway of India – Chennai",
+    "Taj Mahal – Agra"
+   ],
+   "a": 2,
+   "sec": "F"
+  },
+  {
+   "n": 94,
+   "q": "Which pair is correctly matched?",
+   "o": [
+    "Kerala – Kathakali",
+    "Punjab – Garba",
+    "Gujarat – Bhangra",
+    "Odisha – Kuchipudi"
+   ],
+   "a": 0,
+   "sec": "F"
+  },
+  {
+   "n": 95,
+   "q": "If CAT is written as DBU, how will DOG be written?",
+   "o": [
+    "EPG",
+    "EPH",
+    "FPH",
+    "EOH"
+   ],
+   "a": 1,
+   "sec": "F",
+   "why": "Each letter moves one step ahead: D→E, O→P, G→H."
+  },
+  {
+   "n": 96,
+   "q": "An ice cube kept in the sun turns into water. What causes this?",
+   "o": [
+    "Cold",
+    "Wind",
+    "Darkness",
+    "Heat"
+   ],
+   "a": 3,
+   "sec": "F"
+  },
+  {
+   "n": 97,
+   "q": "Which of these is NOT a continent?",
+   "o": [
+    "Africa",
+    "Europe",
+    "Greenland",
+    "Australia"
+   ],
+   "a": 2,
+   "sec": "F"
+  },
+  {
+   "n": 98,
+   "q": "Fill in the missing planet: Mercury, Venus, Earth, ____, Jupiter",
+   "o": [
+    "Mars",
+    "Saturn",
+    "Uranus",
+    "Neptune"
+   ],
+   "a": 0,
+   "sec": "F"
+  },
+  {
+   "n": 99,
+   "q": "How many months in a year have 31 days?",
+   "o": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "a": 2,
+   "sec": "F",
+   "why": "January, March, May, July, August, October and December have 31 days."
+  },
+  {
+   "n": 100,
+   "q": "Two football teams play a match with 11 players each on the field. How many players are on the field in all?",
+   "o": [
+    "11",
+    "22",
+    "20",
+    "24"
+   ],
+   "a": 1,
+   "sec": "F"
+  }
+ ]
+}

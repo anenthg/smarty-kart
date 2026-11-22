@@ -1,0 +1,34 @@
+/* After-race quiz overlay (both games). Sized for the 960×540 TV viewport; .ui scales with --ui.
+   No blurs/filters: compositing is expensive on the TV. */
+.quiz { position: fixed; inset: 0; pointer-events: none; z-index: 5; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #fff; }
+.quiz.hidden { display: none; }
+body.quizzing #hud, body.quizzing #minimap, body.quizzing #speedo, body.quizzing #results, body.quizzing #greattry, body.quizzing #msg { display: none !important; }
+.qz-top { position: absolute; left: 0; right: 0; top: 12px; display: flex; justify-content: center; align-items: center; gap: 14px; }
+.qz-badge { background: #0b2d6ee8; border: 3px solid #ffd21f; border-radius: 99px; padding: 5px 16px; font-weight: 900; font-size: 16px; }
+.qz-dots { display: flex; gap: 8px; }
+.qz-dots i { width: 18px; height: 18px; border-radius: 50%; background: #ffffff55; border: 2px solid #fff; }
+.qz-dots i.ok { background: #2bd35a; } .qz-dots i.no { background: #ff5a5a; } .qz-dots i.now { background: #ffd21f; box-shadow: 0 0 10px #ffd21f; }
+.qz-card { position: absolute; left: 60px; right: 60px; top: 56px; background: #fff; color: #0b2d6e; border-radius: 22px; padding: 12px 24px 14px; text-align: center; box-shadow: 0 7px 0 #0b2d6e66; animation: qzIn .35s ease-out; }
+.qz-card.hidden { display: none; }
+.qz-cat { font-size: 13px; font-weight: 800; color: #6a7fb3; letter-spacing: 1px; margin-bottom: 3px; }
+.qz-q { font-size: 28px; font-weight: 900; line-height: 1.18; }
+.qz-banner { position: absolute; left: 0; right: 0; top: 52px; text-align: center; }
+.qz-banner.big { top: 36%; }
+.qz-banner.hidden { display: none; }
+.qz-banner .qz-b1 { font-size: 44px; font-weight: 900; font-style: italic; color: #ffd21f; text-shadow: 3px 3px 0 #e8202a, 6px 6px 0 #0b2d6e; }
+.qz-banner.try .qz-b1 { color: #fff; text-shadow: 3px 3px 0 #1f7bff, 6px 6px 0 #0b2d6e; }
+.qz-banner .qz-b2 { margin-top: 6px; font-size: 22px; font-weight: 900; text-shadow: 2px 2px 0 #0b2d6e; }
+.qz-banner .qz-b2 small { font-size: 15px; font-weight: 700; opacity: .9; }
+.qz-banner.pop { animation: qzPop .5s cubic-bezier(.3, 1.6, .5, 1); }
+.qz-why { position: absolute; left: 120px; right: 120px; bottom: 74px; background: #0b2d6ee8; border: 3px solid #ffd21f; border-radius: 16px; padding: 8px 14px; font-size: 17px; font-weight: 700; text-align: center; }
+.qz-why.hidden { display: none; }
+.qz-players { position: absolute; left: 16px; bottom: 14px; display: flex; gap: 10px; }
+.qz-pl { background: #0b2d6ee8; border: 3px solid var(--c); border-radius: 14px; padding: 5px 12px; font-weight: 900; font-size: 15px; }
+.qz-pl small { display: block; font-size: 11px; opacity: .85; font-weight: 700; }
+.qz-hint { position: absolute; right: 16px; bottom: 14px; background: #0b2d6ee8; border-radius: 14px; padding: 7px 14px; font-weight: 800; font-size: 13px; }
+@keyframes qzIn { from { opacity: 0; transform: translateY(-14px) } to { opacity: 1; transform: none } }
+@keyframes qzPop { 0% { transform: scale(.4); opacity: 0 } 100% { transform: scale(1); opacity: 1 } }
+/* Neon Racer look */
+.qz-neon .qz-badge, .qz-neon .qz-pl, .qz-neon .qz-hint, .qz-neon .qz-why { background: #12082ae8; border-color: #ff2d95; }
+.qz-neon .qz-card { box-shadow: 0 0 0 4px #ff2d95, 0 0 30px #ff2d9588; }
+.qz-neon .qz-banner .qz-b1 { color: #ff7ac6; text-shadow: 3px 3px 0 #00a8e0, 6px 6px 0 #12082a; }

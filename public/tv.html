@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Racer</title>
+<link rel="stylesheet" href="/css/tv.css">
+<script src="/js/boot.js"></script>
+<script src="/js/room.js"></script>
+<script type="importmap">
+{ "imports": { "three": "/vendor/three/build/three.module.js", "three/addons/": "/vendor/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+
+<div id="loading" class="full">
+  <div class="logo">NEON RACER</div>
+  <div class="bar"><div id="loadfill"></div></div>
+  <div id="loadtxt">Loading the city…</div>
+</div>
+
+<div id="lobby" class="full hidden">
+  <div class="panel ui">
+    <div class="logo">NEON RACER</div>
+    <div class="tag">Grab a phone, scan the code and race!</div>
+    <div class="joinrow">
+      <div id="qr"></div>
+      <div class="steps">
+        <div><b>1.</b> Connect the phone to the same Wi-Fi</div>
+        <div><b>2.</b> Scan the code with the camera</div>
+        <div class="url" id="joinurl"></div>
+        <div class="alt" id="joinalt"></div>
+        <div><b>3.</b> Pick a car, then press <span class="pill">START RACE</span></div>
+      </div>
+    </div>
+    <div id="slots"></div>
+    <div class="lvlstrip" id="lvlstrip"></div>
+    <div class="hint">No phone? ▲ joins the remote player; arrows drive (Space = boost, Z = item).</div>
+  </div>
+</div>
+
+<div id="hud" class="ui"></div>
+<div id="speedo" class="ui hidden"><div id="spd">0</div><div class="unit">KM/H</div></div>
+<div id="msg" class="ui"></div>
+<div id="center" class="hidden"></div>
+<div id="splitline"></div>
+<canvas id="minimap" width="200" height="200"></canvas>
+<div id="paused" class="full hidden"><div class="panel ui"><div class="logo small">⏸ PAUSED</div><div class="tag" id="pausedBy"></div><div class="hint">Press <span class="pill">RESUME</span> on the phone (or OK)</div></div></div>
+
+<div id="results" class="full hidden">
+  <div class="panel wide ui">
+    <div class="logo small">RACE RESULTS</div>
+    <table id="restable"></table>
+    <div class="hint">Press <span class="pill">PLAY AGAIN</span> on a phone (or Enter)</div>
+    <div class="lvlstrip" id="lvlstrip2"></div>
+  </div>
+</div>
+
+<div id="sound" class="hidden">🔊 Press any button for sound</div>
+<div id="dbg" class="hidden"></div>
+<script type="module" src="/js/game.js"></script>
+</body>
+</html>

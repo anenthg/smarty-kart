@@ -1,0 +1,22 @@
+{
+  "name": "kid-racer",
+  "version": "1.0.0",
+  "description": "Neon Racer + Sunny Kart: TV racing games with phone controllers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "assets": "blender -b --factory-startup -P blender/build_matcaps.py && blender -b --factory-startup -P blender/build_car.py && blender -b --factory-startup -P blender/build_pickups.py && blender -b --factory-startup -P blender/build_track.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "three": "0.162.0",
+    "ws": "^8.23.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

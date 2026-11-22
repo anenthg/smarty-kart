@@ -1,0 +1,45 @@
+{
+ "baseRearR": 0.38,
+ "wheels": {
+  "standard": {
+   "frontR": 0.3,
+   "rearR": 0.38,
+   "lift": 0.0
+  },
+  "big": {
+   "frontR": 0.42,
+   "rearR": 0.5,
+   "lift": 0.12
+  },
+  "slick": {
+   "frontR": 0.28,
+   "rearR": 0.34,
+   "lift": -0.04
+  },
+  "roller": {
+   "frontR": 0.22,
+   "rearR": 0.26,
+   "lift": -0.12
+  }
+ },
+ "bodies": [
+  "classic",
+  "buggy",
+  "rocket",
+  "bubble"
+ ],
+ "pivot": [
+  0,
+  0.62,
+  -0.3
+ ],
+ "steer": {
+  "center": [
+   0,
+   0.96,
+   0.2
+  ],
+  "tilt": -60
+ },
+ "version": 2
+}

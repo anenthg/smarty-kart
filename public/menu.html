@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choose a game</title>
+<!-- TV start screen: pick Neon Racer or Sunny Kart with the remote (◀ ▶ OK) or from a connected phone.
+     Plain HTML/CSS (no WebGL), sized for the TV's 960×540 CSS viewport. It connects as the TV screen so phones
+     stay connected and can pick too; going into a game hands the TV connection to that game's page. -->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; overflow: hidden; color: #fff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #12082a 0%, #12082a 50%, #2f86f0 50%, #bfe6ff 100%); }
+  #ui { position: fixed; left: 50%; top: 50%; width: 960px; height: 540px; margin: -270px 0 0 -480px; zoom: var(--ui, 1); }
+  .title { position: absolute; top: 26px; left: 0; right: 0; text-align: center; font-size: 30px; font-weight: 900; letter-spacing: 2px; text-shadow: 2px 2px 0 #0008; }
+  .cards { position: absolute; top: 88px; left: 0; right: 0; display: flex; justify-content: center; gap: 40px; }
+  .card { width: 380px; height: 336px; border-radius: 22px; overflow: hidden; position: relative; border: 5px solid transparent;
+    transform: scale(.94); opacity: .72; transition: transform .15s, opacity .15s; cursor: pointer; }
+  .card.sel { border-color: #fff; transform: scale(1); opacity: 1; box-shadow: 0 0 0 6px #ffd21f99; }
+  .card .art { height: 228px; background-size: cover; background-position: center; }
+  .card .name { padding: 12px 18px 0; font-size: 31px; font-weight: 900; font-style: italic; }
+  .card .sub { padding: 3px 18px; font-size: 14px; opacity: .88; }
+  .neon { background: #140a26; } .neon .name { color: #ff4fae; text-shadow: 2px 2px 0 #00a8e0; } .neon .art { background-image: url(/assets/hero.jpg); }
+  .sunny { background: #0b2d6e; } .sunny .name { color: #ffd21f; text-shadow: 2px 2px 0 #e8202a; } .sunny .art { background-image: url(/sunny/assets/hero.jpg); }
+  .phones { position: absolute; bottom: 58px; left: 0; right: 0; text-align: center; font-size: 14px; font-weight: 600; text-shadow: 1px 1px 0 #0008; }
+  .hint { position: absolute; bottom: 22px; left: 0; right: 0; text-align: center; font-size: 17px; font-weight: 800; text-shadow: 1px 1px 0 #0008; }
+  .pill { background: #fff; color: #000; border-radius: 7px; padding: 2px 9px; font-weight: 900; text-shadow: none; }
+  #go { position: fixed; inset: 0; background: #000; opacity: 0; pointer-events: none; transition: opacity .25s; }
+  #go.on { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div class="title">CHOOSE A GAME</div>
+  <div class="cards">
+    <div class="card neon" data-game="neon"><div class="art"></div><div class="name">NEON RACER</div><div class="sub">Night city · glowing cars · paint your car</div></div>
+    <div class="card sunny" data-game="sunny"><div class="art"></div><div class="name">SUNNY KART</div><div class="sub">Mario Circuit · drift &amp; mini-turbos · shells &amp; bananas</div></div>
+  </div>
+  <div class="phones" id="phones">📱 Phones can join inside either game (scan the QR code there)</div>
+  <div class="hint">◀ ▶ choose · <span class="pill">OK</span> play</div>
+</div>
+<div id="go"></div>
+<script src="/js/room.js"></script>
+<script>
+(() => {
+  const GAMES = ['neon', 'sunny'];
+  const URLS = { neon: '/neon', sunny: '/sunny' };
+  const cards = [...document.querySelectorAll('.card')];
+  let sel = Math.max(0, GAMES.indexOf(localStorage.getItem('kr_game') || 'sunny'));
+  let leaving = false;
+  const show = () => cards.forEach((c, i) => c.classList.toggle('sel', i === sel));
+  const fit = () => document.documentElement.style.setProperty('--ui', String(Math.min(innerWidth / 960, innerHeight / 540)));
+  fit(); addEventListener('resize', fit); show();
+
+  function play(game) {
+    if (leaving || !URLS[game]) return;
+    leaving = true;
+    localStorage.setItem('kr_game', game);
+    sel = GAMES.indexOf(game); show();
+    document.getElementById('go').classList.add('on');
+    setTimeout(() => { location.href = URLS[game]; }, 260);
+  }
+  addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { sel = (sel + GAMES.length - 1) % GAMES.length; show(); e.preventDefault(); }
+    else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { sel = (sel + 1) % GAMES.length; show(); e.preventDefault(); }
+    else if (e.key === 'Enter' || e.code === 'NumpadEnter' || e.key === ' ') { play(GAMES[sel]); e.preventDefault(); }
+  });
+  cards.forEach((c) => c.addEventListener('click', () => play(c.dataset.game)));
+
+  // phones: tell each connected phone we're on the menu; a phone can pick the game
+  const pads = new Map();
+  const phonesEl = document.getElementById('phones');
+  let ws;
+  const toPad = (id, msg) => { if (ws && ws.readyState === 1) ws.send(JSON.stringify({ t: 'toPad', id, msg })); };
+  function refresh() {
+    const n = [...pads.values()].filter((p) => p.on).length;
+    phonesEl.textContent = n ? `📱 ${n} phone${n > 1 ? 's' : ''} connected: they can pick the game too` : '📱 Phones can join inside either game (scan the QR code there)';
+    let slot = 0;
+    for (const [id, p] of pads) toPad(id, { t: 'state', game: 'menu', phase: 'menu', name: p.name, color: '#ffd21f', slot: slot++, status: 'Choose a game', last: GAMES[sel] });
+  }
+  function connect() {
+    ws = new WebSocket(window.KR ? KR.tvSocket() : `ws://${location.host}/?role=tv`);   // this TV's own room (js/room.js)
+    ws.onmessage = (ev) => {
+      let m; try { m = JSON.parse(ev.data); } catch { return; }
+      if (m.t === 'join') { pads.set(m.id, { name: m.name, on: true }); refresh(); }
+      else if (m.t === 'away') { const p = pads.get(m.id); if (p) p.on = false; refresh(); }
+      else if (m.t === 'leave') { pads.delete(m.id); refresh(); }
+      else if (m.t === 'pick' && GAMES.includes(m.game)) play(m.game);
+    };
+    ws.onclose = (e) => { if (e.code !== 4000 && !leaving) setTimeout(connect, 1000); };
+  }
+  connect();
+})();
+</script>
+</body>
+</html>

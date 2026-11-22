@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunny Kart</title>
+<link rel="stylesheet" href="/sunny/sunny.css">
+<script src="/js/boot.js"></script>
+<script src="/js/room.js"></script>
+<script type="importmap">
+{ "imports": { "three": "/vendor/three/build/three.module.js", "three/addons/": "/vendor/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+
+<div id="loading" class="full">
+  <div class="logo">SUNNY KART</div>
+  <div class="bar"><div id="loadfill"></div></div>
+  <div id="loadtxt">Loading the circuit…</div>
+</div>
+
+<div id="lobby" class="full hidden">
+  <div class="panel ui">
+    <div class="logo">SUNNY KART</div>
+    <div class="tag">Scan the code, pick your racer and press START!</div>
+    <div class="joinrow">
+      <div id="qr"></div>
+      <div class="steps">
+        <div><b>1.</b> Phone on the same Wi-Fi</div>
+        <div><b>2.</b> Scan the code with the camera</div>
+        <div class="url" id="joinurl"></div>
+        <div class="alt" id="joinalt"></div>
+        <div><b>3.</b> Pick a racer, then press <span class="pill">START RACE</span></div>
+      </div>
+    </div>
+    <div id="slots"></div>
+    <div class="lvlstrip" id="lvlstrip"></div>
+  </div>
+</div>
+
+<div id="hud" class="ui"></div>
+<div id="speedo" class="ui hidden"><div id="spd">0</div><div class="unit">KM/H</div></div>
+<div id="msg" class="ui"></div>
+<div id="center" class="hidden"></div>
+<div id="splitline"></div>
+<canvas id="minimap" width="200" height="200"></canvas>
+<div id="paused" class="full hidden"><div class="panel box ui"><div class="logo small">⏸ PAUSED</div><div class="tag" id="pausedBy"></div><div class="hint">Press <span class="pill">RESUME</span> on the phone (or OK)</div></div></div>
+
+<div id="intro" class="full hidden">
+  <div class="skip ui">OK = skip</div>
+  <div class="ban ui"><div class="a">SUNNY CIRCUIT</div><div class="b" id="introLaps"></div></div>
+  <div class="icards ui" id="introCards"></div>
+</div>
+<div id="greattry" class="hidden ui"></div>
+
+<div id="results" class="full hidden">
+  <div class="panel box wide ui">
+    <div class="logo small">RESULTS</div>
+    <table id="restable"></table>
+    <div class="hint">Press <span class="pill">PLAY AGAIN</span> on a phone (or OK)</div>
+    <div class="lvlstrip" id="lvlstrip2"></div>
+  </div>
+</div>
+
+<div id="sound" class="hidden">🔊 Press any button for sound</div>
+<div id="dbg" class="hidden"></div>
+<script type="module" src="/sunny/game.js"></script>
+</body>
+</html>

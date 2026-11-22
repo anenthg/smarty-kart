@@ -1,0 +1,12 @@
+# Not needed to run the game (Blender sources, generators, raw audio, mocks, archives)
+node_modules/
+.cert/
+blender/
+tools/
+archive/
+docs/
+old/
+mockups/
+public/sunny/kartlab.html
+*.log
+.DS_Store
